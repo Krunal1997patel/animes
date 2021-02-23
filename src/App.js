@@ -1,16 +1,21 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import Dashboard from './comoned/Dashboard.js';
-import Navbar from './comoned/Navbar.js';
-import Footer from './comoned/Footer.js';
+import Navbar from './components/Navbar.js'
+import Dashboard from './components/Dashboard.js'
+
 
 function App() {
 	return (
+
 		<div className='App'>
-			<Navbar />
-			<Route exact path='/' component={Dashboard} />
-			<Footer />
+
+		<Navbar/>
+
+		<Route exact path='/' component={Dashboard} />
+		
+
+
 		</div>
 	);
 }
