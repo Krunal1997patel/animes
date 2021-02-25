@@ -20,6 +20,7 @@ function App() {
 		<Route exact path='/manga' component={Manga}/>
 
 		<Route exact path='/schedule' component={Schedule}/>
+
 		<Route exact path='/news' component={News}/>
 
 		</div>
