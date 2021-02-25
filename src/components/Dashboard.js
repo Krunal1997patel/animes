@@ -10,7 +10,7 @@ const Dashboard = props => {
         axios
         .get('https://api.jikan.moe/v3/top/anime/1/airing')
         .then(res =>{
-            setAnimes(res.data.top)
+            setAnimes(res.data.top.slice(0,5))
         })
         .catch(err => {
             console.log(err)
@@ -25,7 +25,7 @@ const Dashboard = props => {
             {animes.map(anime => (
                 <div key={anime.title}>
                     <h1>{anime.title}</h1>
-                    <img src={anime.image_url} />
+                    <img src={anime.image_url} alt={`${anime.title}`} />
                 </div>
             ))}
         </div>

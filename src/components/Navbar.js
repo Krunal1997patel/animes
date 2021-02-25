@@ -10,6 +10,9 @@ const Navbar = props => {
 
             <div>
                 <NavLink exact to='/manga'>Manga</NavLink>
+                <NavLink exact to='/schedule'>Schedule</NavLink>
+                <NavLink exact to='/news'>News</NavLink>
+                
             </div>
         </div>
     )
